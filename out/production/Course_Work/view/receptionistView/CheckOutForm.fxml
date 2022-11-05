@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="checkOutContext" prefHeight="540.0" prefWidth="864.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CheckOutFormController">
+
+    <children>
+        <Pane prefHeight="541.0" prefWidth="281.0">
+            <children>
+                <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#2f3640" height="543.0" layoutX="-29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="310.0" />
+                <Label layoutX="9.0" layoutY="4.0" text="UserName" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="9.0" layoutY="32.0" prefHeight="21.0" prefWidth="55.0" style="-fx-background-color: #C4C4C4;" text="Profile">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <ImageView fitHeight="68.0" fitWidth="90.0" layoutX="90.0" layoutY="426.0">
+                    <image>
+                        <Image url="@../../assets/image.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="75.0" layoutY="496.0" text="BLUE OCEAN HOTEL" textFill="WHITE">
+                    <font>
+                        <Font name="Open Sans ExtraBold" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Rectangle arcHeight="40.0" arcWidth="40.0" fill="WHITE" height="42.0" layoutX="64.0" layoutY="112.0" onMouseClicked="#receptionNavigate" onMouseEntered="#receptionMouseEN" onMouseExited="#receptionMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="242.0" />
+        <Label layoutX="93.0" layoutY="121.0" text="Reception Home">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="packagesOuterSQ" arcHeight="40.0" arcWidth="40.0" fill="#2f364000" height="42.0" layoutX="64.0" layoutY="182.0" onMouseClicked="#navigateToPackages" onMouseEntered="#packagesMouseEN" onMouseExited="#packagesMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Rectangle>
+        <Rectangle fx:id="BreakdownOuterSq" arcHeight="40.0" arcWidth="40.0" fill="#ffffff00" height="42.0" layoutX="64.0" layoutY="252.0" onMouseClicked="#navigateToBreakDowns" onMouseEntered="#breakDownMouseEN" onMouseExited="#breakDownMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0" />
+        <Label fx:id="txtPackages" layoutX="93.0" layoutY="191.0" onMouseClicked="#navigateToPackages" onMouseEntered="#packagesMouseEN" onMouseExited="#packagesMouseEX" text="Packages" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label fx:id="txtBreakdowns" layoutX="93.0" layoutY="261.0" onMouseClicked="#navigateToBreakDowns" onMouseEntered="#breakDownMouseEN" onMouseExited="#breakDownMouseEX" text="Breakdowns" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="306.0" layoutY="16.0" text="Checkout">
+            <font>
+                <Font name="Lato-Light" size="36.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#4b4b4b" height="24.0" layoutX="774.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="84.0" />
+        <Label fx:id="mainDashDate" layoutX="786.0" layoutY="11.0" text="2021 /06/20" textFill="WHITE">
+            <font>
+                <Font name="Roboto Medium" size="11.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="moneyStaticBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="354.0" layoutY="440.0" onMouseEntered="#moneyStaticBtnSquMouseEnter" onMouseExited="#moneyStaticBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <ImageView fx:id="moneyStaticsBtnimg" fitHeight="94.0" fitWidth="100.0" layoutX="342.0" layoutY="426.0" onMouseEntered="#moneyStaticBtnSquMouseEnter" onMouseExited="#moneyStaticBtnSquMouseExit">
+            <image>
+                <Image url="@../../assets/moneyIcon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Rectangle fx:id="guestDetailsBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="474.0" layoutY="440.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#guestDetailBtnSquMouseEnter" onMouseExited="#guestDetailBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="settingsBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="596.0" layoutY="440.0" onMouseEntered="#settingsBtnSquMouseEnter" onMouseExited="#settingsBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="exitBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="716.0" layoutY="440.0" onMouseClicked="#navigateToBack" onMouseEntered="#exitBtnSquMouseEnter" onMouseExited="#exitBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <ImageView fx:id="guestDetailsIcon" fitHeight="61.0" fitWidth="62.0" layoutX="481.0" layoutY="448.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#guestDetailBtnSquMouseEnter" onMouseExited="#guestDetailBtnSquMouseExit">
+            <image>
+                <Image url="@../../assets/detailsListIcon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="settingsicon" fitHeight="60.0" fitWidth="63.0" layoutX="605.0" layoutY="448.0" onMouseEntered="#settingsBtnSquMouseEnter" onMouseExited="#settingsBtnSquMouseExit">
+            <image>
+                <Image url="@../../assets/settingsicon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="exiticon" fitHeight="55.0" fitWidth="44.0" layoutX="736.0" layoutY="451.0" onMouseClicked="#navigateToBack" onMouseEntered="#exitBtnSquMouseEnter" onMouseExited="#exitBtnSquMouseExit">
+            <image>
+                <Image url="@../../assets/logoutWhite.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="btnProceed" buttonType="RAISED" layoutX="522.0" layoutY="364.0" onAction="#navigateToDone" prefHeight="30.0" prefWidth="180.0" style="-fx-background-color: #20bf6b;" text="PROCEED" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="Open Sans ExtraBold" size="15.0" />
+            </font>
+        </JFXButton>
+      <Text fill="#778ca3" layoutX="313.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER DETAILS">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label layoutX="328.0" layoutY="123.0" text="Customer Name Cusomer Name">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="143.0" text="Customer Address Line 1">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="156.0" text="Customer Address Line 2">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="169.0" text="Customer Address Line 3">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="188.0" text="NIC : customer's NIC number">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="608.0" layoutY="123.0" text="Customer Email @service.site">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="608.0" layoutY="142.0" text="+(94) customer Telephone number">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Text fill="#778ca3" layoutX="313.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESERVATION DETAILS">
+         <font>
+            <Font name="Open Sans Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label layoutX="328.0" layoutY="263.0" text="ROOMTYPE  (AMOUNT)">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="283.0" text="ROOM ID       : typeCode+roomCode">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="303.0" text="PACKAGE     : person amount">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="328.0" layoutY="323.0" text="MEAL PLAN : mealtype">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="263.0" text="FROM : dateOfOrder()">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="607.0" layoutY="283.0" text="UNTIL : depatureDate">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="710.0" layoutY="364.0" onMouseClicked="#navigateToBack" prefHeight="31.0" prefWidth="82.0" style="-fx-background-color: #7f8c8d;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Open Sans SemiBold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Rectangle fx:id="GuestDetailsSQ" arcHeight="40.0" arcWidth="40.0" fill="#ffffff00" height="42.0" layoutX="64.0" layoutY="322.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#GuestDetailsMouseEN" onMouseExited="#GuestDetailsMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0" />
+      <Label fx:id="txtGuestDetails" layoutX="93.0" layoutY="331.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#GuestDetailsMouseEN" onMouseExited="#GuestDetailsMouseEX" text="Guest Details" textFill="WHITE">
+         <font>
+            <Font name="Open Sans SemiBold" size="17.0" />
+         </font>
+      </Label>
+    </children>
+
+</AnchorPane>

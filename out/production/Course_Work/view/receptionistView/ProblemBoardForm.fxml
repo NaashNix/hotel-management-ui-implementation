@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="problemBoardContext" prefHeight="540.0" prefWidth="864.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProblemBoardFormController">
+
+    <children>
+        <Pane prefHeight="541.0" prefWidth="281.0">
+            <children>
+                <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#2f3640" height="543.0" layoutX="-29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="310.0" />
+                <Label layoutX="9.0" layoutY="4.0" text="UserName" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="9.0" layoutY="32.0" prefHeight="21.0" prefWidth="55.0" style="-fx-background-color: #C4C4C4;" text="Profile">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <ImageView fitHeight="68.0" fitWidth="90.0" layoutX="90.0" layoutY="426.0">
+                    <image>
+                        <Image url="@../../assets/image.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="75.0" layoutY="496.0" text="BLUE OCEAN HOTEL" textFill="WHITE">
+                    <font>
+                        <Font name="Open Sans ExtraBold" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Rectangle fx:id="receptionMenu" arcHeight="40.0" arcWidth="40.0" fill="#ffffff00" height="42.0" layoutX="64.0" layoutY="112.0" onMouseClicked="#receptionNavigate" onMouseEntered="#receptionMouseEN" onMouseExited="#receptionMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Rectangle>
+        <Label fx:id="txtReceptionHome" layoutX="93.0" layoutY="121.0" onMouseClicked="#receptionNavigate" onMouseEntered="#receptionMouseEN" onMouseExited="#receptionMouseEX" text="Reception Home" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Label>
+        <Rectangle fx:id="packagesOuterSQ" arcHeight="40.0" arcWidth="40.0" fill="#2f364000" height="42.0" layoutX="64.0" layoutY="182.0" onMouseClicked="#navigateToPackages" onMouseEntered="#packagesMouseEN" onMouseExited="#packagesMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Rectangle>
+        <Rectangle fx:id="BreakdownOuterSq" arcHeight="40.0" arcWidth="40.0" fill="WHITE" height="42.0" layoutX="64.0" layoutY="252.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="242.0" />
+        <Label fx:id="txtPackages" layoutX="93.0" layoutY="191.0" onMouseClicked="#navigateToPackages" onMouseEntered="#packagesMouseEN" onMouseExited="#packagesMouseEX" text="Packages" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </Label>
+        <Label fx:id="txtBreakdowns" layoutX="93.0" layoutY="261.0" text="Breakdowns">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="306.0" layoutY="16.0" text="Report a problem">
+            <font>
+                <Font name="Lato-Light" size="36.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#4b4b4b" height="24.0" layoutX="774.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="84.0" />
+        <Label fx:id="mainDashDate" layoutX="786.0" layoutY="11.0" text="2021 /06/20" textFill="WHITE">
+            <font>
+                <Font name="Roboto Medium" size="11.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="moneyStaticBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="354.0" layoutY="440.0" onMouseEntered="#moneyStaticBtnSquMouseEnter" onMouseExited="#moneyStaticBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <ImageView fx:id="moneyStaticsBtnimg" fitHeight="94.0" fitWidth="100.0" layoutX="342.0" layoutY="426.0" onMouseEntered="#moneyStaticsIconMEn" onMouseExited="#moneyStaticIconMEx">
+            <image>
+                <Image url="@../../assets/moneyIcon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Rectangle fx:id="guestDetailsBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="474.0" layoutY="440.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#guestDetailBtnSquMouseEnter" onMouseExited="#guestDetailBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="settingsBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="596.0" layoutY="440.0" onMouseEntered="#settingsBtnSquMouseEnter" onMouseExited="#settingsBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="exitBtnSqu" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="716.0" layoutY="440.0" onMouseClicked="#receptionNavigate" onMouseEntered="#exitBtnSquMouseEnter" onMouseExited="#exitBtnSquMouseExit" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <ImageView fx:id="guestDetailsIcon" fitHeight="61.0" fitWidth="62.0" layoutX="481.0" layoutY="448.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#guestDetailsMouseEn" onMouseExited="#guestDetailsMouseEx">
+            <image>
+                <Image url="@../../assets/detailsListIcon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="settingsicon" fitHeight="60.0" fitWidth="63.0" layoutX="605.0" layoutY="448.0" onMouseEntered="#settingsMouseEn" onMouseExited="#settingsMouseEx">
+            <image>
+                <Image url="@../../assets/settingsicon.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <ImageView fx:id="exiticon" fitHeight="55.0" fitWidth="44.0" layoutX="736.0" layoutY="451.0" onMouseClicked="#receptionNavigate" onMouseEntered="#exitMouseEn" onMouseExited="#exitMouseEx">
+            <image>
+                <Image url="@../../assets/logoutWhite.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+      <ComboBox layoutX="306.0" layoutY="88.0" prefHeight="24.0" prefWidth="160.0" promptText="Select Room" />
+      <ComboBox layoutX="475.0" layoutY="88.0" prefHeight="24.0" prefWidth="313.0" promptText="Select Problem Type" />
+      <TextArea layoutX="306.0" layoutY="162.0" prefHeight="146.0" prefWidth="484.0" />
+      <Label layoutX="305.0" layoutY="140.0" text="Describe  the problem." />
+      <Text fill="#7f8c8d" layoutX="308.0" layoutY="325.0" lineSpacing="1.5" strokeType="OUTSIDE" strokeWidth="0.0" text="The selected room will marked as &quot;Under Maintenance&quot; and will be removed from reservation process. Please press OK to continue." textAlignment="JUSTIFY" wrappingWidth="484.0" />
+      <Label layoutX="308.0" layoutY="372.0" text="EMERGENCY +(94) 38 45 78 999 " />
+      <JFXButton buttonType="RAISED" layoutX="628.0" layoutY="364.0" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #2980b9;" text="OK" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Open Sans ExtraBold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="716.0" layoutY="364.0" onMouseClicked="#receptionNavigate" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #7f8c8d;" text="Cancel" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Open Sans ExtraBold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Rectangle fx:id="GuestDetailsSQ" arcHeight="40.0" arcWidth="40.0" fill="#2f364000" height="42.0" layoutX="64.0" layoutY="322.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#GuestDetailsMouseEN" onMouseExited="#GuestDetailsMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Rectangle>
+      <Label fx:id="txtGuestDetails" layoutX="93.0" layoutY="331.0" onMouseClicked="#navigateToGuestDetails" onMouseEntered="#GuestDetailsMouseEN" onMouseExited="#GuestDetailsMouseEX" text="Guest Details" textFill="WHITE">
+         <font>
+            <Font name="Open Sans SemiBold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+    </children>
+
+</AnchorPane>

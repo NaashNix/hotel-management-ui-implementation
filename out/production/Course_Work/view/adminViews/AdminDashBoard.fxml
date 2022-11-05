@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashBoardContext" prefHeight="540.0" prefWidth="864.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adminViewControllers.AdminDashBoardController">
+    <children>
+        <Pane prefHeight="541.0" prefWidth="281.0">
+            <children>
+                <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#0d4b67" height="543.0" layoutX="-29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="310.0" />
+                <Label layoutX="9.0" layoutY="4.0" text="UserName" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto" size="20.0" />
+                    </font>
+                </Label>
+                <JFXButton buttonType="RAISED" layoutX="9.0" layoutY="32.0" prefHeight="21.0" prefWidth="55.0" style="-fx-background-color: #dfe4ea;" text="Profile">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </JFXButton>
+                <ImageView fitHeight="68.0" fitWidth="90.0" layoutX="90.0" layoutY="426.0">
+                    <image>
+                        <Image url="@../../assets/image.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="75.0" layoutY="496.0" text="BLUE OCEAN HOTEL" textFill="WHITE">
+                    <font>
+                        <Font name="Open Sans ExtraBold" size="13.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Rectangle arcHeight="40.0" arcWidth="40.0" fill="WHITE" height="42.0" layoutX="64.0" layoutY="112.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="242.0" />
+        <Label layoutX="93.0" layoutY="121.0" text="Admin Dashboard">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="MealSettingsSQ" arcHeight="40.0" arcWidth="40.0" fill="#2f364000" height="42.0" layoutX="64.0" layoutY="182.0" onMouseClicked="#navigateToMealSettings" onMouseEntered="#SMealSettingsMouseEN" onMouseExited="#SMealSettingsMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Rectangle>
+        <Rectangle fx:id="PackgeSettingsSQ" arcHeight="40.0" arcWidth="40.0" fill="#ffffff00" height="42.0" layoutX="64.0" layoutY="252.0" onMouseClicked="#navigateToRoomSettings" onMouseEntered="#SRoomSettingsMouseEN" onMouseExited="#SRoomSettingsMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor></Rectangle>
+        <Label fx:id="txtMealSettings" layoutX="93.0" layoutY="191.0" onMouseClicked="#navigateToMealSettings" onMouseEntered="#SMealSettingsMouseEN" onMouseExited="#SMealSettingsMouseEX" text="Meal Settings" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label fx:id="txtPackageSettings" layoutX="93.0" layoutY="261.0" onMouseClicked="#navigateToRoomSettings" onMouseEntered="#SRoomSettingsMouseEN" onMouseExited="#SRoomSettingsMouseEX" text="Package Settings" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+        <Label fx:id="greetingText" layoutX="306.0" layoutY="16.0" text="Admin Dashboard">
+            <font>
+                <Font name="Lato-Light" size="36.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#4b4b4b" height="24.0" layoutX="774.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="84.0" />
+        <Label fx:id="mainDashDate" layoutX="786.0" layoutY="11.0" text="2021 /06/20" textFill="WHITE">
+            <font>
+                <Font name="Roboto Medium" size="11.0" />
+            </font>
+        </Label>
+        <Circle fill="#2ecc71" layoutX="408.0" layoutY="192.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Label layoutX="387.0" layoutY="169.0" text="25" textFill="WHITE">
+            <font>
+                <Font name="Roboto Black" size="38.0" />
+            </font>
+        </Label>
+        <Circle fill="#34ace0" layoutX="568.0" layoutY="192.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Label alignment="CENTER" layoutX="546.0" layoutY="168.0" text="10" textFill="WHITE">
+            <font>
+                <Font name="Roboto Black" size="38.0" />
+            </font>
+        </Label>
+        <Circle fill="#c4c4c4" layoutX="728.0" layoutY="192.0" radius="57.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+        <Label alignment="CENTER" layoutX="707.0" layoutY="169.0" prefHeight="47.0" prefWidth="43.0" text="0">
+            <font>
+                <Font name="Roboto Black" size="38.0" />
+            </font>
+        </Label>
+        <Label layoutX="372.0" layoutY="261.0" text="Reserved">
+            <font>
+                <Font name="Lato Black" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="529.0" layoutY="261.0" text="Customers">
+            <font>
+                <Font name="Lato Black" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="658.0" layoutY="261.0" text="Under Maintenance">
+            <font>
+                <Font name="Lato Black" size="16.0" />
+            </font>
+        </Label>
+        <Rectangle fx:id="viewReportsSQ" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="354.0" layoutY="440.0" onMouseClicked="#navigateToViewReports" onMouseEntered="#viewReportsMouseEN" onMouseExited="#viewReportsMouseEX" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="roomSettingsSQ" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="474.0" layoutY="440.0" onMouseClicked="#navigateToRoomSettings" onMouseEntered="#roomSettingsMouseEN" onMouseExited="#roomSettingsMouseEX" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="mealSettingsSQ" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="596.0" layoutY="440.0" onMouseClicked="#navigateToMealSettings" onMouseEntered="#mealSettingsMouseEN" onMouseExited="#mealSettingsMouseEX" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Rectangle fx:id="backSQ" arcHeight="5.0" arcWidth="5.0" fill="#bababa" height="73.0" layoutX="716.0" layoutY="440.0" onMouseClicked="#navigateToBack" onMouseEntered="#backIconMosueEN" onMouseExited="#backIconMosueEX" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="76.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <ImageView fx:id="backIcon" fitHeight="55.0" fitWidth="44.0" layoutX="736.0" layoutY="451.0" onMouseClicked="#navigateToBack" onMouseEntered="#backIconMosueEN" onMouseExited="#backIconMosueEX">
+            <image>
+                <Image url="@../../assets/logoutWhite.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        <Rectangle fx:id="IncomeReportsSQ" arcHeight="40.0" arcWidth="40.0" fill="#ffffff00" height="42.0" layoutX="64.0" layoutY="322.0" onMouseClicked="#navigateToViewReports" onMouseEntered="#SIncomeReportsMouseEN" onMouseExited="#SIncomeReportsMouseEX" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" width="242.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rectangle>
+        <Label fx:id="txtIncomeReports" layoutX="93.0" layoutY="331.0" onMouseClicked="#navigateToViewReports" onMouseEntered="#SIncomeReportsMouseEN" onMouseExited="#SIncomeReportsMouseEX" text="Income Reports" textFill="WHITE">
+            <font>
+                <Font name="Open Sans SemiBold" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Label>
+      <ImageView fx:id="roomSettingsIcon" fitHeight="61.0" fitWidth="62.0" layoutX="481.0" layoutY="446.0" onMouseClicked="#navigateToRoomSettings" onMouseEntered="#roomSettingsMouseEN" onMouseExited="#roomSettingsMouseEX">
+         <image>
+            <Image url="@../../assets/roomIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton fx:id="btnIncomeReports" buttonType="RAISED" layoutX="316.0" layoutY="335.0" onMouseClicked="#navigateToViewReports" prefHeight="48.0" prefWidth="146.0" style="-fx-background-color: #FF7F50;" text="Income Reports" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnViewProblems" buttonType="RAISED" layoutX="496.0" layoutY="335.0" onMouseClicked="#navigateToViewProblems" prefHeight="48.0" prefWidth="146.0" style="-fx-background-color: #FF6A77;" text="View Problems" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnCallReception" buttonType="RAISED" layoutX="676.0" layoutY="335.0" prefHeight="48.0" prefWidth="146.0" style="-fx-background-color: #57606F;" text="Call Reception" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="mealSettingsIcon" fitHeight="62.0" fitWidth="62.0" layoutX="604.0" layoutY="447.0" onMouseClicked="#navigateToMealSettings" onMouseEntered="#mealSettingsMouseEN" onMouseExited="#mealSettingsMouseEX">
+         <image>
+            <Image url="@../../assets/food.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="viewReportsIcon" fitHeight="84.0" fitWidth="86.0" layoutX="349.0" layoutY="431.0" onMouseClicked="#navigateToViewReports" onMouseEntered="#viewReportsMouseEN" onMouseExited="#viewReportsMouseEX">
+         <image>
+            <Image url="@../../assets/moneyIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="adminDashBoardTime" layoutX="506.0" layoutY="70.0" text="02 : 29 PM">
+         <font>
+            <Font name="Roboto Medium" size="29.0" />
+         </font>
+      </Label>
+      <Circle layoutX="636.0" layoutY="338.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.9605262875556946" green="0.6447977423667908" blue="0.6447977423667908" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9605262875556946" green="0.2223440557718277" blue="0.2223440557718277" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+      <Label layoutX="627.0" layoutY="327.0" text="06" textFill="WHITE">
+         <font>
+            <Font name="Open Sans ExtraBold" size="16.0" />
+         </font>
+      </Label>
+    </children>
+
+
+</AnchorPane>
